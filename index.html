@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" charset="utf-8" src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Estacionamento</title>
+</head>
+<body >
+    
+    <div id="corpoHome">
+            <h1>Sistema de Estacionamento</h1>
+       
+        <div>
+          <input class="botoes" type="button" id="cadastrarBtn" value="Estacionar" >
+        </div>
+        <div>
+            <input class="botoes" type="button" id="liberarBtn" value="Liberar Veiculo">
+        </div>
+        <div>
+            <input class="botoes" type="button" id="relatorioBtn" value="Gerar Relatorio">
+        </div>
+        <div>
+            <input class="botoes" type="button" id="saldoBtn" value="Gerar Saldo">
+        </div>
+
+    </div>
+    <div id="corpoCad">
+        <h1>Sistema de Estacionamento</h1>
+    <div>
+        <p>Selecione o tipo de veiculo</p>
+        <input type="radio" id="radioMoto"  name="veiculo" value="moto">
+        <label for="veiculo1">Moto</label> 
+        <input type="radio" id="radioCarro" name="veiculo" value="carro">
+        <label for="veiculo3">Carro</label>
+        
+    </div>
+    <div>
+        <p>Placa do carro</p>
+        <input type="text" name="" id="inputPlaca">
+    </div>
+    <div>
+        <p>Numero de portas</p>
+        <input type="text" name="" id="inputNumeroportas">
+    </div>
+    <div>
+        <p>Marca</p>
+        <input type="text" name="" id="inputMarca">
+
+    </div>
+    <div>
+        <p>Cor</p>
+        <input type="text" name="" id="inputCor">
+
+    </div>
+    <div>
+        <p>Nome do proprietario</p>
+        <input type="text" name="" id="inputNomeProp">
+
+    </div>
+    <div style="margin-top: 20px;">
+        <input type="button" class="botoes"id="voltarBtnCad" value="Voltar">
+        <input type="button" class="botoes" id="estacionarBtn" value="Enviar">
+    </div>
+
+</div>
+
+
+<div id="corpoLiberar">
+    <h1>Sistema de Estacionamento</h1>
+<div>
+    <div>
+        <input type="text" id="verificarInput" style="height: 45px; width: 200px;border-radius: 15px;">
+        <input type="button"class="botoes" id="verificarBtn" value="Liberar">
+    </div>
+    <div>
+        <p>PLACA    DONO    ENTRADA</p>
+    </div>
+    <div id="listarLib">
+
+    </div>
+    <div>
+        <input type="button"class="botoes" id="voltarBtnLib" value="Voltar">
+
+    </div>
+  
+
+</div>
+
+
+</div>
+
+<div id="corpoRelatorio">
+    <h1>Sistema de Estacionamento</h1>
+    <div>
+        <div>
+            <input type="text" id="rel" style="height: 45px; width: 200px;border-radius: 15px;">
+            <input type="button" id="relBtn"  class="botoes" value="Buscar">
+        </div>
+        <div>
+            <p>PLACA    DONO    ENTRADA     SAIDA</p>
+
+        </div>
+        <div id="listaRelatorio">
+        </div>
+        <div>
+            <input type="button" class="botoes" id="voltarBtnRel" value="Voltar">
+        </div>
+        
+    </div>
+
+</div>
+<div id="corpoSaldo">
+    <h1>Sistema de Estacionamento</h1>
+    <div>
+        
+        <div id="listaSaldo">
+        </div>
+        <div>
+            <input type="button" class="botoes" id="voltarBtnSaldo" value="Voltar">
+        </div>
+        
+    </div>
+
+</div>
+
+    
+</body>
+</html>
